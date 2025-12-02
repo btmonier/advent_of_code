@@ -6,6 +6,9 @@
 read_input <- function(day_name, test = FALSE) {
   suffix <- if (test) "_test" else ""
   path <- file.path("..", "input", "2023", paste0(day_name, suffix, ".txt"))
+  if (!file.exists(path)) {
+    stop("Input file not found: ", path)
+  }
   readLines(path, warn = FALSE)
 }
 

@@ -1,4 +1,4 @@
-[project]
+[workspace]
 name = "aoc_2023"
 version = "0.1.0"
 description = "Advent of Code 2023 solutions in R"
@@ -7,6 +7,12 @@ platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 
 [tasks]
 aoc = "Rscript main.R"
+
+[target.osx.tasks]
+rstudio = "open aoc_2023.Rproj"
+
+[target.win.tasks]
+rstudio = "start \"\" aoc_2023.Rproj"
 
 [dependencies]
 r-base = ">=4.5"
