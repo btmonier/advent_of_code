@@ -1,0 +1,14 @@
+[project]
+name = "aoc_2023"
+version = "0.1.0"
+description = "Advent of Code 2023 solutions in R"
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+
+[tasks]
+aoc = "Rscript main.R"
+
+[dependencies]
+r-base = ">=4.5"
+r-tidyverse = ">=2.0"
+
