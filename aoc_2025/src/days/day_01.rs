@@ -28,7 +28,7 @@ pub fn run() {
         }
     }
 
-    let res01 = count_zeros;
+    let res01 = count_zeros_p1;
 
     // Part 2
     // Count every click that causes the dial to point at 0 (during or at end of rotation)
