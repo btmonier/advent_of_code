@@ -54,3 +54,4 @@ res_02 <- part_two_solver(input)
 # Output results
 cat(sprintf("Part 1 answer: %s\n", res_01))
 cat(sprintf("Part 2 answer: %s\n", res_02))
+

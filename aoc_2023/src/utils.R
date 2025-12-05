@@ -17,3 +17,4 @@ read_input <- function(day_name, test = FALSE, trim = TRUE, drop_empty = TRUE) {
   lines
 }
 
+
